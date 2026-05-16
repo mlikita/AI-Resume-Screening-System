@@ -40,4 +40,10 @@ http://127.0.0.1:5000
 * User Login System
 * Online Deployment
 
+## Screenshots
 
+### Home Page
+![Home Page](home.png)
+
+### Result Page
+![Result Page](result.png)
