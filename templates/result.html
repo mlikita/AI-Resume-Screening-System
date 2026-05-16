@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Resume Result</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background:#f4f4f4;
+            text-align:center;
+            margin-top:50px;
+        }
+
+        .box{
+            background:white;
+            width:700px;
+            margin:auto;
+            padding:40px;
+            border-radius:15px;
+            box-shadow:0px 0px 15px gray;
+        }
+
+        h1{
+            color:#007bff;
+        }
+
+        .skill{
+            display:inline-block;
+            background:#007bff;
+            color:white;
+            padding:8px 15px;
+            margin:5px;
+            border-radius:20px;
+        }
+
+        .score{
+            font-size:45px;
+            color:green;
+            font-weight:bold;
+        }
+
+        .job{
+            background:#fff3cd;
+            padding:15px;
+            border-radius:10px;
+            margin-top:20px;
+        }
+
+        a{
+            text-decoration:none;
+            color:white;
+            background:#007bff;
+            padding:10px 20px;
+            border-radius:5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Resume Analysis Result</h1>
+
+    <hr>
+
+    <h2>Detected Skills</h2>
+
+    {% for skill in skills.split(',') %}
+
+        <span class="skill">
+            {{ skill }}
+        </span>
+
+    {% endfor %}
+
+    <hr>
+
+    <h2>Resume Score</h2>
+
+    <div class="score">
+
+        {{ score }} / 100
+
+    </div>
+
+    <hr>
+
+    <h2>Recommended Jobs</h2>
+
+    <div class="job">
+
+        {{ jobs }}
+
+    </div>
+
+    <br><br>
+
+    <a href="/">
+        Upload Another Resume
+    </a>
+
+</div>
+
+</body>
+
+</html>
