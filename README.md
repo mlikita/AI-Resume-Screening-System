@@ -1,49 +1,39 @@
 # AI Resume Screening & Job Recommendation System
 
-## Description
+## Objective
+To extract skills from resumes and recommend job roles using Flask and Python.
 
-AI-powered resume analysis web application built using Flask and Python. The system extracts text from uploaded PDF resumes, detects technical skills, calculates resume scores, and recommends suitable job roles.
+## Description
+This project is a web application that allows users to upload PDF resumes. It extracts text, finds skills, calculates a score, and suggests job roles.
 
 ## Features
-
-* Resume PDF Upload
-* Skill Detection
-* Resume Scoring
-* Job Recommendation System
-* PDF Resume Analysis
-* Professional User Interface
+- Upload Resume (PDF)
+- Extract Skills
+- Resume Scoring
+- Job Recommendation
+- Simple Web Interface
 
 ## Technologies Used
-
-* Python
-* Flask
-* HTML
-* CSS
-* pdfplumber
-* GitHub
+- Python
+- Flask
+- HTML
+- CSS
+- pdfplumber
 
 ## How to Run
-
-```bash
-pip install -r requirements.txt
+pip install flask pdfplumber
 python app.py
-```
 
 Open:
 http://127.0.0.1:5000
 
 ## Future Improvements
-
-* ATS Resume Scoring
-* NLP-based Skill Extraction
-* Database Integration
-* User Login System
-* Online Deployment
+- ATS scoring system
+- AI-based skill detection
+- Database storage
+- Login system
+- Online deployment
 
 ## Screenshots
-
-### Home Page
-![Home Page](home.png)
-
-### Result Page
-![Result Page](result.png)
+Home Page: home.png  
+Result Page: result.png
